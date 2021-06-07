@@ -4,7 +4,7 @@ python3 FTPdownloader.py  -f -u myuser:mypass@127.0.0.1 \
 	-s "/parent 0/parent 1/Chacon, Scott_Straub, Ben - Pro Git (2014, Apress) - libgen.lc (1).pdf" \
 	-d /mnt/d/test_docker
 	
-python3 FTPdownloader.py  -r -u myuser:mypass@127.0.0.1 \
+python3 /mnt/i/3_Python/Python-FTPdownloader/FTPdownloader.py  -r -u myuser:mypass@127.0.0.1 \
 	-s "/parent 0/parent 1/" \
 	-d /mnt/d/test_docker
 	
@@ -16,7 +16,12 @@ python3 FTPdownloader.py  -f -u myuser:mypass@127.0.0.1 `
 python3 FTPdownloader.py  -r -u myuser:mypass@127.0.0.1 `
 	-s "/parent 0/parent 1/" `
 	-d D:\test_docker
-	
+
+python3 /mnt/i/3_Python/Python-FTPdownloader/FTPdownloader.py  -g -u myuser:mypass#127.0.0.1 \
+	-s "/parent 0/" \
+	-d "/mnt/d/test_docker" \
+	-i ".pdf" \
+	-i ".jpg"
 	
 #create docker enviroment with ftp server to test, require docker installed:
 #FTP server fauria/vsftpd to create
